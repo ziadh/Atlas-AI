@@ -25,7 +25,7 @@ import { ChatSDKError } from '../errors';
 
 const connectDB = async () => {
   if (mongoose.connections[0].readyState) {
-    return;
+    return; 
   }
   try {
     // biome-ignore lint: Forbidden non-null assertion.
